@@ -1,0 +1,8 @@
+<script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
+<script>
+  const md new MobileDetect(window.navigator.userAgent)
+  const target = '/mobile.aspx'
+  if (md && md.mobile()) {
+    window.location.assign(target)
+  }
+</script>
